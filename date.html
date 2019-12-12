@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!--숙제-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <style>table { border-collapse: collapse;}  </style>
+    <title>schedule</title>
+       <link rel="shortcut icon" type="img/x-icon" href="./img/11.png">
+    <script type="text/javascript" >
+    var today = new Date();
+    function prevClaendar(){
+      today = new Date(today.getFullYear(), today.getMonth()-1,today.getDate());
+      buildCalendar();
+    }
+    function nextCalendar(){
+      today = new Date(today.getFullYear(), today.getMonth()+1,today.getDate());
+      buildCalendar();
+    }
+    function buildCalendar(){
+      var nMonth = new Date(today.getFullYear(),today.getMonth(),1);// 이번달의 첫번째날
+      var lastDate =new Date(today.getFullYear(),today.getMonth()+1,0);//이번달의 마지막날
+      var tblCalendar =document.getElementById("calendar");    //테이블 달력을 만드는 테이블
+      var tblCalendarYM =document.getElementById("calendarYM"); ///XXXX년도XX월 출력
+      tblCalendarYM.innerHTML = today.getFullYear()+"년"+(today.getMonth()+1)+"월";
+      while(tblCalendar.rows.length>2){
+        tblCalendar.deleteRow(tblCalendar.rows.length -1);
+      }
+      var row = null;
+      row =tblCalendar.insertRow();
+      var cnt =0;
+ 
+      for ( i=0; i <nMonth.getDay(); i++) {
+        cell =row.insertCell();
+        cnt = cnt + 1;
+    }
+      for(i=1; i<=lastDate.getDate(); i++){
+        cell =row.insertCell();
+        cell.innerHTML = i;
+        cnt = cnt + 1;
+        if (cnt%7 == 0)    //1주=7일
+         row = calendar.insertRow();} }
+    </script>
+    <style type="text/css">
+      #container {
+        width: 1200px;
+        margin: 0px auto;
+        padding: 20px;}
+         #login{list-style: none;
+          padding-right: 50px;
+           cursor: pointer;
+       border-style: hidden; text-decoration: none;   padding: 5; text-align: right;}
+       #login li a{font-size: 20px; float: right;
+              margin-right: 40px; display: block;}
+        #nav {list-style-type: none;
+      margin: 0;
+      padding: 0;}
+    #nav li { float: left; font-size: 20px;
+              margin-right: 40px;}
+    #nav li a {display: block; 
+       border-style: hidden; text-decoration: none;
+      padding: 10px; text-align: center; }
+        #nav a { text-decoration: none; color: navy;
+        font-weight: bolder; }
+    #nav li a:hover { font-weight: bold;
+    background-color: pink;
+    color: white; cursor: pointer;}
+      #header { padding: 20px;
+        margin-bottom: 20px; text-align: center;
+        border: 0px solid #bcbcbc; }
+           #content { width: 820px;
+            padding: 20px;
+            margin-bottom: 20px; 
+            float: left;}
+      #sidebar { width: 260px;
+        padding: 20px;
+        margin-bottom: 20px;
+        float: right; margin-top: 10px; }
+      #footer { clear: both;
+        padding: 20px;
+        background-color: right;}
+        a{text-decoration: none; margin-bottom: 40px;}
+        a:link { color: red; text-decoration: none;}
+        a:visited { color: black; text-decoration: none;}
+            </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="header">
+     <a href="index.html"><img src="./img/logo.png" width="600" ></a>
+      </div>
+ <ul id="nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a>공지사항</a></li>
+    <li><a href="date.html">스케줄</a></li>
+    <li><a>커뮤니티</a></li>
+    <li><a>이미지</a></li>
+    <li><a>비디오</a></li> </ul>
+    <ul id="login">
+        <li><a> Login</a></li>
+        <li><a>ㅣ </a></li>
+        <li><a href="login.html">Join</a></li> </ul>
+</ul> 
+  <body>
+    <table id="calendar"  border="3" align="center" width="800" height="500"  >
+      <tr >
+        <td align ="center"> <label onclick="prevClaendar()"><</label> </td>
+        <td colspan="5" align ="center" id="calendarYM">yyyy년 m월</td>
+        <td align ="center"> <label onclick="nextCalendar()">></label> </td>
+      </tr>
+      <tr>
+        <td align="center">일</td>
+        <td align="center">월</td>
+        <td align="center">화</td>
+        <td align="center">수</td>
+        <td align="center">목</td>
+        <td align="center">금</td>
+        <td align="center">토</td>
+      </tr>
+    </table>
+        <script type="text/javascript" >
+ 
+          buildCalendar();
+        </script>
+
+              <div id="footer">
+     <br> Twitter ㅣ @loonatheworld
+     <br> Youtube ㅣ loonatheworld
+     <p>
+      <br> <img src="./img/footer2.png" width="150">
+      <p> ©Copyright BlockBerryCreative, 2019.
+      </div>
+ 
+ 
+  </body>
+</html>
+ <nMonth.getDay(); i++) {
+    cell =row.insertCell();
+    cnt = cnt + 1;}
+  //달력 출력
+  for(i=1; i<=lastDate.getDate(); i++){
+    cell =row.insertCell();
+    cell.innerHTML = i;
+    cnt = cnt + 1;
+    if (cnt%7 == 0)    //1주=7일
+      row = calendar.insertRow(); }
+ 
