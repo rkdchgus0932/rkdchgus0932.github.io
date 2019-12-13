@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>join</title>
+<link rel="shortcut icon" type="img/x-icon" href="./img/11.png">
+  <style>
+          .{margin: 0; padding: 0;}
+      body{font-family:'돋움'; }
+      #container {
+        width: 1200px;
+        margin: 0px auto;
+        padding: 20px;}
+         #login{list-style: none;
+          padding-right: 50px;
+           cursor: pointer;
+       border-style: hidden; text-decoration: none;   padding: 5; text-align: right;}
+       #login li a{font-size: 20px; float: right;
+              margin-right: 40px; display: block;}
+        #nav {list-style-type: none;
+      margin: 0;
+      padding: 0;}
+    #nav li { float: left; font-size: 20px;
+              margin-right: 40px;}
+    #nav li a {display: block; 
+       border-style: hidden; text-decoration: none;
+      padding: 10px; text-align: center; }
+        #nav a { text-decoration: none; color: navy;
+        font-weight: bolder; }
+    #nav li a:hover { font-weight: bold;
+    background-color: pink;
+    color: white; cursor: pointer;}
+      #header { padding: 20px;
+        margin-bottom: 20px; text-align: center;
+        border: 0px solid #bcbcbc; }
+           #content { width: 820px;
+            padding: 20px;
+            margin-bottom: 20px;
+            float: left; margin-top: 20px; }
+      #sidebar { width: 260px;
+        padding: 20px;
+        margin-bottom: 20px; margin-top: 10px; 
+        float: right;}
+      #footer { clear: both;
+        padding: 20px;
+        background-color: right;}
+                a{text-decoration: none;}
+        a:link { color: red; text-decoration: none;}
+        a:visited { color: black; text-decoration: none;}
+ td, tr, input, textarea, select, form
+ { font-family:바탕;
+  font-size:1em;
+  border-radius:5px;}
+  .button{border: solid 1px #ff0080;
+  background-Color:#ffe6f2;
+  font:12px ;
+  font-weight:bold; color:#ff0080; 
+  width:130;height:30; }
+ 
+  
+  </style>
+</head>
+  <body>
+    <div id="container">
+      <div id="header">
+     <a href="index.html"><img src="./img/logo.png" width="600" ></a>
+      </div>
+     <ul id="nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a>공지사항</a></li>
+    <li><a href="date1.html">스케줄</a></li>
+    <li><a>커뮤니티</a></li>
+    <li><a>이미지</a></li>
+    <li><a>비디오</a></li> </ul>
+    <ul id="login">
+        <li><a> Login</a></li>
+        <li><a>ㅣ </a></li>
+        <li><a href="login.html">Join</a></li> </ul>
+        <div id="content">
+ <center>
+ <h3> 회원가입</h3>
+ <table bgcolor ="pink" cellspacing = "9" >
+ <FORM>
+  <tr>
+   <td text-align="center">아이디 </td>
+   <td>
+   <input type = "text" size="13">
+   <input type = "button" value = "중복확인" class="button">
+   </td>
+  </tr>
+  <tr>
+   <td> 비밀번호 </td>
+   <td> <input type = "password"/> </td>
+  </tr>
+  <tr>
+   <td> 비밀번호 확인 </td>
+   <td> <input type = "password"/>&nbsp;*비밀번호를 다시 입력해주세요.
+   </td>
+  </tr>
+<tr>
+   <td> 성명 </td>
+   <td> <input type = "text"/> </td>
+  </tr>
+  <tr>
+   <td> 이메일 </td>
+   <td>
+    <input type = "text"/> @ <input type = "text"/>
+    <select>
+     <option> 직접입력 </option>
+     <option> naver.com </option>
+     <option> daum.net </option>
+     <option> nate.com </option>
+    </select>
+   </td>
+  </tr>
+  <tr>
+   <td> 주소 </td>
+   <td>
+    <input type = "text"/>
+<input type = "button" value = "주소찾기" class="button">
+   </td>
+  </tr>
+  <tr>
+   <td> 상세주소 </td>
+   <td>
+    <input type = "text" size="50">
+   </td>
+  </tr>
+  <tr>
+   <td> 휴대폰 </td>
+   <td>
+    <input type = "radio" name = "phone"/> SK
+    <input type = "radio" name = "phone"/> KT
+    <input type = "radio" name = "phone"/> LGU+
+   <br/>
+    <select>
+     <option> 010 </option>
+     <option> 011 </option>
+     <option> 016 </option>
+     <option> 018 </option>
+    </select>
+    <input type = "text" size = "6"/> - <input type = "text" size = "6"/>
+   </td>
+  </tr>
+  <tr>
+   <td> 자기소개  </td>
+   <td>
+    <textarea cols = "60" rows = "10"></textarea>
+   </td>
+  </tr>
+ </FORM>
+</table> <br><br>
+<input type = "image" src="./img/join.png" >
+</center> </div>
+ <div id="sidebar">
+        <img src="./img/benu.png" width="220">
+        
+      </div>
+<br/>
+      <div id="footer">
+     <br> Twitter ㅣ @loonatheworld
+     <br> Youtube ㅣ loonatheworld
+     <p>
+      <br> <img src="./img/footer2.png" width="150">
+      <p> ©Copyright BlockBerryCreative, 2019.
+      </div>
+</body>
+</html>
