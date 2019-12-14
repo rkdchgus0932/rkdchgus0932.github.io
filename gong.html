@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Notice</title>
+    <link rel="shortcut icon" type="img/x-icon" href="./img/11.png">
+    <style>
+      .{margin: 0; padding: 0;}
+      body{font-family:'돋움'; }
+      #container {
+        width: 1170px;
+        margin: 0px auto;
+        padding: 20px;}
+        #login{list-style: none;
+          padding-right: 50px;
+           cursor: pointer;
+       border-style: hidden; text-decoration: none;   padding: 5; text-align: right;}
+       #login li a{font-size: 20px; float: right;
+              margin-right: 40px; display: block;}
+        #nav {list-style-type: none;
+      margin: 0;
+      padding: 0;}
+    #nav li { float: left; font-size: 20px;
+              margin-right: 40px; margin-left: 20px;}
+    #nav li a {display: block; 
+       border-style: hidden; text-decoration: none;
+      padding: 10px; text-align: center; }
+        #nav a { text-decoration: none; color: navy;
+        font-weight: bolder; }
+    #nav li a:hover { font-weight: bold;
+    background-color: pink;
+    color: white; cursor: pointer;}
+      #header { padding: 20px;
+        margin-bottom: 20px; text-align: center;
+        border: 0px solid #bcbcbc; }
+           #content { width: 820px;
+            padding: 24px; margin-left: 50px;
+            margin-bottom: 20px; 
+            float: left;}
+      #sidebar { width: 260px;
+        padding: 20px;
+        margin-bottom: 20px;
+        float: right; margin-top: 10px; }
+      #footer { clear: both;
+        padding: 20px;
+        background-color: right;}
+        a{text-decoration: none;}
+        a:link { color: red; text-decoration: none;}
+        a:visited { color: black; text-decoration: none;}
+
+
+        table{border-collapse:collapse; }
+        table tr  td{border:dashed 1px gray;
+        text-align:center;
+        text-align:center;
+        padding:5px;}
+        ul, li{ 
+        list-style:none;
+        text-align:center;
+        padding:0;
+        margin:0;}
+ #mainWrapper{
+        width: 800px;
+        margin: 0 auto; }
+    #mainWrapper > ul > li:first-child {text-align: center;
+        font-size:14pt;
+        height:40px;
+        vertical-align:middle;
+        line-height:30px;}
+    #ulTable {margin-top:10px;} 
+    #ulTable > li:first-child > ul > li {
+        background-color:#c9c9c9;
+        font-weight:bold;
+        text-align:center;}
+
+    #ulTable > li > ul {clear:both;
+        padding:0px auto;
+        position:relative;
+        min-width:40px;}
+    #ulTable > li > ul > li { 
+        float:left;
+        font-size:15pt;
+        border-bottom:1px solid silver;
+        vertical-align:baseline;}    
+    #ulTable > li > ul > li:first-child               {width:10%;} 
+    #ulTable > li > ul > li:first-child +li           {width:45%;} 
+    #ulTable > li > ul > li:first-child +li+li        {width:20%;} 
+    #ulTable > li > ul > li:first-child +li+li+li     {width:15%;} 
+    #ulTable > li > ul > li:first-child +li+li+li+li{width:10%;} 
+#divPaging {clear:both; 
+        margin:0 auto; 
+        width:220px; 
+        height:50px;}
+#divPaging > div {
+        float:left;
+        width: 30px;
+        margin:0 auto;
+        text-align:center; cursor: pointer;}
+    #liSearchOption {clear:both;}
+    #liSearchOption > div {
+        margin:0 auto; 
+        margin-top: 25px; 
+        width:auto; 
+        height:100px;}
+    .left {text-align : left; cursor: pointer;}
+
+            </style>
+  </head>
+  <body>
+        <ul id="login">
+        <li><a> Login</a></li>
+        <li><a>ㅣ </a></li>
+        <li><a href="login.html">Join</a></li> </ul>
+    <div id="container">
+      <div id="header">
+       <a href="index.html"><img src="./img/logo.png" width="600" ></a>
+      </div>
+      <ul id="nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="gong.html">공지사항</a></li>
+    <li><a href="date1.html">스케줄</a></li>
+    <li><a href="cum.html">커뮤니티</a></li>
+    <li><a href="gal.html">프로필</a></li>
+    <li><a href="video.html">비디오</a></li> </ul>
+        </div>
+      <div id="sidebar">
+        <img src="./img/benu.png" width="220">
+        
+      </div>
+
+</ul> 
+      <div id="content">
+        <p> <marquee bgcolor="#cbcefb" scrollAmount="13"> ★ 공지사항 읽어주세요 ★ 악플금지 ★</marquee>
+<div id="mainWrapper">
+     <ul>
+
+         <li>
+             
+            <ul id ="ulTable">
+                <li>
+                 <ul>
+                       <li>No</li>
+                       <li>제목</li>
+                       <li>작성일</li>
+                       <li>작성자</li>
+                       <li>조회수</li>
+                   </ul>
+                 </li>
+                 <li>
+                     <ul>
+                <li>1</li>
+                <li class="left" onMouseover="this.style.color='red';" onMouseout="this.style.color='black';">
+                 <img src="img/ic.gif" width="26"> 
+                홈페이지 공지사항 </li>
+                <li>2019.12.4</li>
+                <li>매니저</li>
+                <li>3940</li>
+            </ul>
+        </li>
+           <li>
+               <ul>
+                   <li>2</li>
+                   <li class="left" onMouseover="this.style.color='red';" onMouseout="this.style.color='black';">서포터즈 활동</li>
+                   <li>2019.12.17</li>
+                   <li>스탭</li>
+                   <li>234</li>
+               </ul>
+                    </li>
+                     <li>
+               <ul>
+                   <li>3</li>
+                   <li class="left" onMouseover="this.style.color='red';" onMouseout="this.style.color='black';">LOONA 등업신청 및 조건</li>
+                   <li>2019.12.15</li>
+                   <li>스탭</li>
+                   <li>543</li>
+               </ul>
+                    </li>
+                    <li>
+               <ul>
+          <li>4</li>
+           <li class="left" onMouseover="this.style.color='red';" onMouseout="this.style.color='black';">외부 커뮤니티 언급금지</li>
+            <li>2019.12.15</li>
+            <li>스탭</li>
+            <li>66</li>
+              </ul>
+                    </li>
+                    <li>
+               <ul>
+            <li>5</li>
+            <li class="left" onMouseover="this.style.color='red';" onMouseout="this.style.color='black';">신고합니다.</li>
+            <li>2019.12.13</li>
+            <li>스탭</li>
+            <li>971</li>
+               </ul>
+                <li>
+               <ul>
+                   <li>6</li>
+                   <li class="left" onMouseover="this.style.color='red';" onMouseout="this.style.color='black';">★이벤트 당첨자 발표★</li>
+                   <li>2019.12.12</li>
+                   <li>스탭</li>
+                   <li>197</li>
+               </ul>
+                    </li>
+                     <li>
+               <ul>
+                   <li >7</li>
+                   <li class="left" onMouseover="this.style.color='red';" onMouseout="this.style.color='black';">서버문제 해결</li>
+                   <li>2019.12.12</li>
+                   <li>관리자</li>
+                   <li>78</li>
+               </ul>
+                    </li>
+                     <li>
+               <ul>
+                   <li>8</li>
+                   <li class="left" onMouseover="this.style.color='red';" onMouseout="this.style.color='black';">☆가입 이벤트☆</li>
+                   <li>2019.12.11</li>
+                   <li>스탭</li>
+                   <li>294</li>
+               </ul>
+                    </li>
+               <li>
+               <ul>
+            <li>9</li>
+            <li class="left" onMouseover="this.style.color='red';" onMouseout="this.style.color='black';">#VIVI_선물 전달</li>
+            <li>2019.12.10</li>
+            <li>서포터즈</li>
+            <li>38</li>
+               </ul>
+                <li>
+            <li>
+               <ul>
+            <li>10</li>
+            <li class="left" onMouseover="this.style.color='red';" onMouseout="this.style.color='black';">싸인회 공지사항</li>
+            <li>2019.12.9</li>
+            <li>스탭</li>
+            <li>123</li>
+               </ul>
+                <li>
+        <li>
+               <ul>
+            <li>11</li>
+            <li class="left" onMouseover="this.style.color='red';" onMouseout="this.style.color='black';">총공 공지</li>
+            <li>2019.12.3</li>
+            <li>매니저</li>
+            <li>139</li>
+               </ul>
+                </li>
+                           <li>
+               <ul>
+                   <li>12</li>
+                   <li class="left" onMouseover="this.style.color='red';" onMouseout="this.style.color='black';">HELP</li>
+                   <li>2019.12.11</li>
+                   <li>스탭</li>
+                   <li>999</li>
+               </ul>
+                    </li>
+                               <li>
+               <ul>
+                   <li>12</li>
+                   <li class="left" onMouseover="this.style.color='red';" onMouseout="this.style.color='black';">>LOONA OPEN<</li>
+                   <li>2019.11.23</li>
+                   <li>매니저</li>
+                   <li>2112</li>
+               </ul>
+                    </li>
+                    <li>                                        
+                </ul>
+            </li>
+
+
+
+            <li>
+                <div id="divPaging">
+          <div>◀</div>
+             <div><b>1</b></div>
+           <div>2</div>
+          <div>3</div>
+          <div>4</div>
+          <div>5</div>
+          <div>▶</div>
+                </div>
+
+   </li>
+   <li id='liSearchOption'>
+       <div>
+           <select id='selSearchOption' >
+              <option value='A'>제목+내용</option>
+              <option value='T'>제목</option>
+              <option value='C'>내용</option>
+          </select>
+          <input id='txtKeyWord' />
+          <input type='button' value='검색'/>
+      </div>
+      </li>
+
+        </ul>
+      <div id="footer">
+     <br> Twitter ㅣ @loonatheworld    
+     <br> Youtube ㅣ loonatheworld
+     <p>
+      <br> <img src="./img/footer2.png" width="150">
+      <p> ©Copyright BlockBerryCreative, 2019. 
+      </div>
+</body>
+</html>
+ 
